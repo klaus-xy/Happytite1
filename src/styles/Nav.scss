@@ -1,0 +1,113 @@
+$Green: #3d893f;
+$Gray: #ececec;
+$Black: #000000;
+
+.nav-container {
+  background-color: $Gray;
+  padding: 0 4rem;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $Black;
+    .logo {
+      width: 24px;
+      height: 24px;
+      transform: scale(4);
+      z-index: 100;
+    }
+    h1 {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: none;
+        color: #3d893f;
+      }
+    }
+    .drop-down-icon {
+      position: relative;
+      top: 5px;
+      right: 0px;
+      transform: scale(1.5);
+      &:hover {
+        cursor: pointer;
+        color: #3d893f;
+      }
+    }
+    ul {
+      display: flex;
+      gap: 1rem;
+
+      .recipes {
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+          .sub-menu {
+            display: block;
+            opacity: 1;
+            pointer-events: all;
+            top: 26px;
+          }
+        }
+      }
+      li {
+        list-style: none;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        a {
+          text-decoration: none;
+          padding: 6px 0.8rem;
+          color: $Black;
+        }
+        .active {
+          color: white;
+          background-color: $Green;
+          border-radius: 10px;
+          //transition: background-color 0.25s ease-in;
+        }
+        &:hover {
+          .drop-down-icon {
+            color: #3d893f;
+          }
+        }
+
+        .sub-menu {
+          // display: none;
+          pointer-events: none;
+          opacity: 0;
+          position: absolute;
+          top: 10px;
+          background-color: #ececec;
+          padding: 0.6rem 0 0.6rem 0;
+          margin-left: 2.6rem;
+          border-radius: 10px;
+          transition: all 0.3s ease-in-out;
+          z-index: -1;
+
+          li {
+            width: max-content;
+          }
+          a {
+            font-size: 12px;
+          }
+          .active {
+            color: #3d893f;
+            background-color: unset;
+            border-radius: 14px;
+          }
+          &:hover {
+            display: block;
+            opacity: 1;
+            pointer-events: all;
+            top: 26px;
+          }
+        }
+      }
+    }
+  }
+}

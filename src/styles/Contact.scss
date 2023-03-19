@@ -1,0 +1,57 @@
+.contact-ctnr {
+  display: grid;
+  place-content: center;
+  height: 92vh;
+  //background-color: green;
+  background-size: cover;
+  background-image: url("../images/healthy-green7.jpg");
+  background-position: center;
+  img {
+    display: none;
+    position: absolute;
+    width: 1400px;
+    height: auto;
+    top: -100px;
+    z-index: -10;
+  }
+
+  .contact-info-ctnr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 128, 0, 0.527);
+    width: 90vw;
+    height: 80vh;
+    max-width: 1200px;
+    border: 10px solid white;
+    border-radius: 10px;
+
+    color: white;
+    .contact-info {
+      text-align: center;
+      width: 300px;
+      h3 {
+        font-size: 30px;
+        font-weight: 700;
+        text-decoration: underline;
+        //line-height: 20px;
+      }
+    }
+  }
+  .icon {
+    transform: scale(2, 2);
+
+    &:hover {
+      //color: #3d893f;
+      cursor: pointer;
+    }
+  }
+  .address {
+    font-size: 18px;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
