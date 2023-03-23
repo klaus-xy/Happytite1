@@ -1,12 +1,18 @@
 .about {
-  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 4rem 0rem;
   font-size: 30px;
+  gap: 8rem;
+
   .left {
-    width: 25%;
-    margin: 0;
+    width: auto;
+    // margin: 0 4rem;
+    margin-left: 0rem;
     img {
       //position: absolute;
-      width: 540px;
+      width: 500px;
       height: auto;
     }
   }
@@ -14,10 +20,123 @@
   .right {
     //margin-top: 6rem;
     width: 40%;
+    margin-right: 0;
     p {
-      margin-bottom: 2rem;
+      margin-top: 4rem;
+      margin-bottom: 0rem;
+      width: 600px;
       span {
         font-weight: 700;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .about {
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-start;
+    margin: 4rem 0rem;
+    font-size: 26px;
+    gap: 2rem;
+
+    .left {
+      width: auto;
+      // margin: 0 4rem;
+      margin-left: 0rem;
+      img {
+        //position: absolute;
+        width: 480px;
+        height: auto;
+      }
+    }
+
+    .right {
+      //margin-top: 6rem;
+      width: 40%;
+      margin-right: 0;
+      p {
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+        width: auto;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .about {
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-start;
+    // margin: 4rem 0rem;
+    font-size: 26px;
+    gap: 2rem;
+
+    .left {
+      width: auto;
+      // margin: 0 4rem;
+      margin-left: 0rem;
+      img {
+        //position: absolute;
+        width: 450px;
+        height: auto;
+      }
+    }
+
+    .right {
+      //margin-top: 6rem;
+      width: 40%;
+      margin-right: 0;
+      p {
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+        width: auto;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .about {
+    // display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    // margin: 4rem 0rem;
+    font-size: 24px;
+    gap: 0rem;
+
+    .left {
+      width: auto;
+      // margin: 0 4rem;
+      margin-left: 0rem;
+      img {
+        //position: absolute;
+        width: 400px;
+        height: auto;
+      }
+    }
+
+    .right {
+      //margin-top: 6rem;
+      width: auto;
+      margin-right: 0;
+      padding: 0 3rem;
+      p {
+        margin-top: 4rem;
+        margin-bottom: 0rem;
+        width: auto;
+
+        span {
+          font-weight: 700;
+        }
       }
     }
   }

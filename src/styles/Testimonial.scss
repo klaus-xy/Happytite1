@@ -1,10 +1,12 @@
 .test-ctnr {
   // display: flex;
-  margin: 10rem 0;
+  margin: 10rem auto;
   //justify-content: center;
   //align-items: center;
   //width: 900px;
-  //height: 90vh;
+  height: 58vh;
   color: white;
+  max-width: 1440px;
+  overflow: hidden;
   //background-color: aqua;
 }

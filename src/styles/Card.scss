@@ -8,6 +8,7 @@
   padding: 2rem 0;
   text-align: center;
   z-index: 100;
+  position: relative;
 
   .card-image {
     img {
@@ -40,5 +41,9 @@
     margin-top: 2rem;
     text-transform: uppercase;
     font-style: italic;
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    right: 0;
   }
 }

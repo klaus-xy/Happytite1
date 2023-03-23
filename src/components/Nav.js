@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { BiMenu } from "react-icons/bi";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { SiIfood } from "react-icons/si";
 
@@ -8,13 +9,14 @@ const Nav = () => {
   return (
     <div className="nav-container">
       <nav>
-        <h1>
-          {" "}
+        <div className="logo-ctnr">
           <NavLink to="/">
             <img src={Logo} alt="happytite logo" className="logo" />
-            Happytite
           </NavLink>
-        </h1>
+          <h1>
+            <NavLink to="/">Happytite</NavLink>
+          </h1>
+        </div>
         <ul>
           <li>
             <NavLink to="/">Home</NavLink>
@@ -40,6 +42,7 @@ const Nav = () => {
             <NavLink to="/testimonials">Testimonials</NavLink>
           </li>
         </ul>
+        <BiMenu className="nav-btn" />
       </nav>
     </div>
   );

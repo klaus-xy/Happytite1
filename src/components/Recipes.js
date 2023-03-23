@@ -35,6 +35,20 @@ const Recipes = () => {
         }
         classname={"recipe"}
       />
+      <Recipe
+        image={HealthyGreen13}
+        text={
+          "Tomato, Salad Nicoise, Tuna Salad, Tuna Fish Sandwich, Egg Salad, Food, Recipe, Meal, Salad Nicoise, Tuna Salad, Tuna Fish Sandwich"
+        }
+        classname={"recipe"}
+      />
+      <Recipe
+        image={HealthyGreen13}
+        text={
+          "Tomato, Salad Nicoise, Tuna Salad, Tuna Fish Sandwich, Egg Salad, Food, Recipe, Meal, Salad Nicoise, Tuna Salad, Tuna Fish Sandwich"
+        }
+        classname={"recipe"}
+      />
     </div>
   );
 };
