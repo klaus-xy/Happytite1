@@ -3,11 +3,15 @@ import { BiMenu } from "react-icons/bi";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import { SiIfood } from "react-icons/si";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import Logo from "../images/Happytite-logo.png";
 
 const Nav = () => {
+  const navRef = useRef();
+  const handleClick = () => {
+    navRef.current.classList.toggle("show");
+  };
   const [navState, setNavState] = useState(false);
 
   console.log(navState);
@@ -23,39 +27,45 @@ const Nav = () => {
             <NavLink to="/">Happytite</NavLink>
           </h1>
         </div>
-        <ul className={`nav-menu ${navState ? "active" : "inactive"}`}>
+        <ul ref={navRef}>
+          <IoClose className="nav-btn nav-close" onClick={handleClick} />
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" onClick={handleClick}>
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about">About Us</NavLink>
+            <NavLink to="/about" onClick={handleClick}>
+              About Us
+            </NavLink>
           </li>
 
           <li className="recipes">
-            <NavLink to="/recipes">Recipes</NavLink>
+            <NavLink to="/recipes" onClick={handleClick}>
+              Recipes
+            </NavLink>
             <RiArrowDropDownLine className="drop-down-icon" />
             <ul className="sub-menu">
               <li>
-                <NavLink to="/tips">Healthy Tips</NavLink>
+                <NavLink to="/tips" onClick={handleClick}>
+                  Healthy Tips
+                </NavLink>
               </li>
             </ul>
           </li>
 
           <li>
-            <NavLink to="/contact">Contact Us</NavLink>
+            <NavLink to="/contact" onClick={handleClick}>
+              Contact Us
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/testimonials">Testimonials</NavLink>
+            <NavLink to="/testimonials" onClick={handleClick}>
+              Testimonials
+            </NavLink>
           </li>
         </ul>
-        <BiMenu
-          className="nav-btn nav-open"
-          onClick={() => setNavState(!navState)}
-        />
-        <IoClose
-          className="nav-btn nav-close"
-          onClick={() => setNavState(!navState)}
-        />
+        <BiMenu className="nav-btn nav-open" onClick={handleClick} />
       </nav>
     </div>
   );

@@ -5,3 +5,13 @@
   max-width: 1440px;
   overflow: hidden;
 }
+
+@media only screen and (max-width: 650px) {
+  .test-ctnr {
+    margin: 3rem auto;
+    height: 70vh;
+    color: white;
+    max-width: 1440px;
+    overflow: hidden;
+  }
+}
