@@ -1,4 +1,5 @@
 import Card from "./Card";
+import Footer from "./Footer";
 import ProfilePic1 from "../images/profile-pic1.jpg";
 import ProfilePic2 from "../images/profile-pic2.jpg";
 import ProfilePic3 from "../images/profile-pic3.jpg";
@@ -64,57 +65,60 @@ const Testimonials = () => {
     // ),
   };
   return (
-    <div className="test-ctnr">
-      <Slider {...settings}>
-        <Card
-          name={"George Bayo"}
-          age={"23"}
-          content={
-            "A friend introduced me to Happytite app 2 months ago and its been nothing short of amazing. I am sticking to this experience."
-          }
-          picture={ProfilePic1}
-        />
-        <Card
-          name={"Elenore Rhodes"}
-          age={"29"}
-          content={
-            "This App solves the problem of Avalanche of information in the internet space. It has helped curate good nutritional diet i quest for."
-          }
-          picture={ProfilePic2}
-        />
-        <Card
-          name={"John Smith"}
-          age={"25"}
-          content={
-            "A friend introduced me to Happytite app 2 months ago and its been nothing short of amazing. I am sticking to this experience."
-          }
-          picture={ProfilePic3}
-        />
-        <Card
-          name={"Yusuf Amir"}
-          age={"28"}
-          content={
-            "Happytite app has been a game-changer for me. It's so easy to use and has helped me stay on track with my goals. I highly recommend it to anyone who wants to improve their health and wellness"
-          }
-          picture={ProfilePic4}
-        />
-        <Card
-          name={"Priyanka Shyla"}
-          age={"28"}
-          content={
-            "I love this app! It's so user-friendly and has everything I need to track my daily meals and nutrient intake. The personalized recommendations and meal plans are also a great bonus. Highly recommended!"
-          }
-          picture={ProfilePic5}
-        />
-        <Card
-          name={"Kelvin Goodman"}
-          age={"18"}
-          content={
-            "As someone who's always struggled with their diet, Happytite app has been a great solution. It's helped me stay accountable and motivated to make healthier choices. I'm so grateful for this tool!"
-          }
-          picture={ProfilePic6}
-        />
-      </Slider>
+    <div className="testimonial">
+      <div className="test-ctnr">
+        <Slider {...settings}>
+          <Card
+            name={"George Bayo"}
+            age={"29"}
+            content={
+              "A friend introduced me to Happytite app 2 months ago and its been nothing short of amazing. I am sticking to this experience."
+            }
+            picture={ProfilePic1}
+          />
+          <Card
+            name={"Elenore Rhodes"}
+            age={"27"}
+            content={
+              "This App solves the problem of Avalanche of information in the internet space. It has helped curate good nutritional diet i quest for."
+            }
+            picture={ProfilePic2}
+          />
+          <Card
+            name={"John Smith"}
+            age={"25"}
+            content={
+              "A friend introduced me to Happytite app 2 months ago and its been nothing short of amazing. I am sticking to this experience."
+            }
+            picture={ProfilePic3}
+          />
+          <Card
+            name={"Yusuf Amir"}
+            age={"28"}
+            content={
+              "Happytite app has been a game-changer for me. It's so easy to use and has helped me stay on track with my goals. I highly recommend it to anyone who wants to improve their health and wellness"
+            }
+            picture={ProfilePic4}
+          />
+          <Card
+            name={"Priyanka Shyla"}
+            age={"28"}
+            content={
+              "I love this app! It's so user-friendly and has everything I need to track my daily meals and nutrient intake. The personalized recommendations and meal plans are also a great bonus. Highly recommended!"
+            }
+            picture={ProfilePic5}
+          />
+          <Card
+            name={"Kelvin Goodman"}
+            age={"18"}
+            content={
+              "As someone who's always struggled with their diet, Happytite app has been a great solution. It's helped me stay accountable and motivated to make healthier choices. I'm so grateful for this tool!"
+            }
+            picture={ProfilePic6}
+          />
+        </Slider>
+      </div>
+      <Footer />
     </div>
   );
 };

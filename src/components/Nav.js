@@ -1,11 +1,17 @@
 import { NavLink } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { IoClose } from "react-icons/io5";
 import { SiIfood } from "react-icons/si";
+import { useState } from "react";
 
 import Logo from "../images/Happytite-logo.png";
 
 const Nav = () => {
+  const [navState, setNavState] = useState(false);
+
+  console.log(navState);
+
   return (
     <div className="nav-container">
       <nav>
@@ -17,7 +23,7 @@ const Nav = () => {
             <NavLink to="/">Happytite</NavLink>
           </h1>
         </div>
-        <ul>
+        <ul className={`nav-menu ${navState ? "active" : "inactive"}`}>
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
@@ -42,7 +48,14 @@ const Nav = () => {
             <NavLink to="/testimonials">Testimonials</NavLink>
           </li>
         </ul>
-        <BiMenu className="nav-btn" />
+        <BiMenu
+          className="nav-btn nav-open"
+          onClick={() => setNavState(!navState)}
+        />
+        <IoClose
+          className="nav-btn nav-close"
+          onClick={() => setNavState(!navState)}
+        />
       </nav>
     </div>
   );

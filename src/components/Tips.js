@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import HealthyTips from "../images/healthy-life.jpg";
 import HealthyGreen4 from "../images/healthy-green4.jpg";
 
@@ -32,6 +33,7 @@ const Tips = () => {
       <div className="left">
         <img src={HealthyGreen4} alt="healty-life pic" />
       </div>
+      <Footer />
     </div>
   );
 };

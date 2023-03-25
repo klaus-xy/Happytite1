@@ -1,4 +1,4 @@
-import React from "react";
+import Footer from "./Footer";
 
 const Recipe = ({ image, text, classname }) => {
   return (
@@ -9,6 +9,7 @@ const Recipe = ({ image, text, classname }) => {
       <div className="text-ctnr">
         <p>{text}</p>
       </div>
+      {/* <Footer /> */}
     </div>
   );
 };

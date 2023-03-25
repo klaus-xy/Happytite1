@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Footer from "./Footer";
 import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
@@ -29,6 +30,7 @@ const Home = () => {
         />
       </div>
       <div>{/* <img src={HealthyGreen2} alt="healthy dish" /> */}</div>
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Footer from "./Footer";
 import HealthyGreen4 from "../images/healthy-green4.jpg";
 
 const About = () => {
@@ -22,6 +23,7 @@ const About = () => {
           navLink={"/recipes"}
         />
       </div>
+      <Footer />
     </div>
   );
 };

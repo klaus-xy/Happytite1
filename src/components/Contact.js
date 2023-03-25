@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import HealthyGreen7 from "../images/healthy-green7.jpg";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsEnvelope } from "react-icons/bs";
@@ -20,6 +21,7 @@ const Contact = () => {
           <h4>@happytite_nutrition </h4>
         </div>
       </div>
+      {/* <Footer /> */}
     </div>
   );
 };
