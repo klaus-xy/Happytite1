@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Testimonials from "./components/Testimonials";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function App() {
   return (

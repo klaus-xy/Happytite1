@@ -6,22 +6,24 @@ import { FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="contact-ctnr">
-      <img src={HealthyGreen7} alt="healthy dish background" />
-      <div className="contact-info-ctnr">
-        <div className="contact-info">
-          <h3 className="uppercase">contact us</h3>
-          <HiOutlineLocationMarker className="icon" />
-          <h4 className="uppercase address">
-            231, bridgeview road, b344dg, bristol, birmingham
-          </h4>
-          <BsEnvelope className="icon" />
-          <h4>nutrition@happytite.com </h4>
-          <FaInstagram className="icon" />
-          <h4>@happytite_nutrition </h4>
+    <div>
+      <div className="contact-ctnr">
+        <img src={HealthyGreen7} alt="healthy dish background" />
+        <div className="contact-info-ctnr">
+          <div className="contact-info">
+            <h3 className="uppercase">contact us</h3>
+            <HiOutlineLocationMarker className="icon" />
+            <h4 className="uppercase address">
+              231, bridgeview road, b344dg, bristol, birmingham
+            </h4>
+            <BsEnvelope className="icon" />
+            <h4>nutrition@happytite.com </h4>
+            <FaInstagram className="icon" />
+            <h4>@happytite_nutrition </h4>
+          </div>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
